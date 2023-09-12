@@ -1,6 +1,6 @@
 public class Operator {
     public static void main(String[] args) {
-        int kor, eng; // 변수선언->기억공간이 만들어진다.
+        int kor, eng; // 변수선언->기억공간이 만들어진다
             kor = 77;
             eng = 87;
         int tot;
