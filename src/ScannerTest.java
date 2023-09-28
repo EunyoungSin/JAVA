@@ -20,5 +20,7 @@ public class ScannerTest {
         System.out.print("문자열 입력하세요:");
         String str1=scan.nextLine();
         System.out.println("str1 = " + str1);
+
+        scan.close();
     }
 }
