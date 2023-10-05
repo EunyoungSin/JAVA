@@ -4,6 +4,10 @@ public class Person {
     public String name;
     public int age;
     public String phone;
+    // 기본생성자 메서드 => 생략되어있지만 기본생성자 메서드가 있어야 객체가 생성됨
+    public Person() {
+
+    }
     public void play(){
         System.out.println("운동을 한다.");
     }
