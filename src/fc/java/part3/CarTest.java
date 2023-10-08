@@ -1,5 +1,7 @@
 package fc.java.part3;
 
+import com.sun.jdi.CharType;
+
 import java.util.Scanner;
 
 public class CarTest {
@@ -29,10 +31,13 @@ public class CarTest {
         System.out.println("자동차타입:"); // G(휘발유), D(경유)
         String carType = scan.nextLine(); // char이 없어 string 사용
 
-//        System.out.println(carSn+"\t"+carName+"\t"+carPrice+"\t"+carOwner+"\t"+carYear+"\t"+carType);
+        //System.out.println(carSn+"\t"+carName+"\t"+carPrice+"\t"+carOwner+"\t"+carYear+"\t"+carType);
+        // 자동차 데이터를 이동하기 위한 바구니가 필요(DTO, VO)
+        // 클래스로 CarDTO, CarVO 모델 설계
+        carInfoPrint(carSn, carName, carPrice, carOwner, carYear, carType);
     }
 
-    public void carInfoPrint(int carSn, String carName, int carPrice, String carOwner, int carYear, String carType) {
-
+    public static void carInfoPrint(int carSn, String carName, int carPrice, String carOwner, int carYear, String carType) {
+        System.out.println(carSn+"\t"+carName+"\t"+carPrice+"\t"+carOwner+"\t"+carYear+"\t"+carType);
     }
 }
