@@ -4,7 +4,8 @@ public class NoneStaticTest {
     public static void main(String[] args) {
         int a=10;
         int b=20;
-        int sum=StaticTest.hap(a,b);
+        NoneStaticTest st = new NoneStaticTest();
+        int sum=st.hap(a,b);
         System.out.println("sum = " + sum);
     }
     public int hap(int a, int b) {
