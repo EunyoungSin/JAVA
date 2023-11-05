@@ -10,7 +10,7 @@ public class ObjectCasting {
         Animal ani = new Dog();
         ani.eat();
 
-        ani=new Cat();
+        ani=new Cat(); // 업캐스팅(Upcasting)
         ani.eat();
         //ani.night(); // 다운캐스팅(Downcasting)
         //Cat c=(Cat)ani;
